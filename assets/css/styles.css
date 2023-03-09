@@ -1,0 +1,13 @@
+@import url(./styles/header.css);
+@import url(./styles/main.css);
+@import url(./styles/footer.css);
+
+:root {
+    --logo-font: 'Titan One', cursive;
+    --main-font: 'Saira', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--main-font);
+}
