@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
     <title>Matching Game - Dev.by Lucas Oliveira</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600&family=Titan+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
     <header>
         <h1 class="logo">Matching Game</h1>
@@ -21,21 +24,62 @@
             <label for="hard"><input type="radio" id="hard">Boxer</label>
         </fieldset>
     </header>
-    <main>
+    <aside>
         <button type="button">Start</button>
-        <section class="rules-section">
-            <h2 class="rules">Rules</h2>
+        <span class="moves"></span>
+        <span class="time"></span>
+    </aside>
+    <main>
+        <section class="rules hide">
+            <h2 class="rules-title">Rules</h2>
             <p class="rules-content"></p>
-            <section class="game-board">
-                <h2 class="game-title">Find the matches</h2>
-                <div class="cards">
-                    
+        </section>
+        <section class="game">
+            <h2 class="game-title">Find the matches</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="./assets/img/pug1.jpg" alt="Dog Image" class="card-img">
                 </div>
-            </section>
+                <div class="card">
+                    <img src="./assets/img/pug3.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug4.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug2.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug6.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug5.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug1.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug6.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug4.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug5.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug3.jpg" alt="Dog Image" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="./assets/img/pug2.jpg" alt="Dog Image" class="card-img">
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>
         <p>Developed by Lucas Oliveira</p>
     </footer>
 </body>
+
 </html>
