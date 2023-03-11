@@ -1,13 +1,24 @@
 @import url(./styles/header.css);
+@import url(./styles/comands.css);
+@import url(./styles/rules.css);
 @import url(./styles/main.css);
 @import url(./styles/footer.css);
 
 :root {
     --logo-font: 'Titan One', cursive;
     --main-font: 'Saira', sans-serif;
+    --bg-header: #596363;
+    --bg-comands: #25769c;
+    --btn-color: #66f384ec;
+    --line-color: #02072b;
+    --white: #F1F1F1;
 }
 
 body {
     font-size: 16px;
     font-family: var(--main-font);
+}
+
+.hide {
+    display: none;
 }

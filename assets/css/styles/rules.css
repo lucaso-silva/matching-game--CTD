@@ -1,0 +1,11 @@
+.rules {
+    background-color: var(--bg-header);
+    padding: 1em;
+    width: 60vw;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.rules-title {
+    font-weight: 600;
+}

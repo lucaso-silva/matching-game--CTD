@@ -1,0 +1,15 @@
+.comands {
+    display: flex;
+    justify-content: space-evenly;
+    padding: .75em 0;
+    background-color: var(--bg-comands);
+}
+
+.start {
+    background-color: var(--btn-color);
+    padding: .25em 1.25em;
+    border: solid .15em var(--line-color);
+    border-radius: 10px;
+    font-family: var(--logo-font);
+    color: var(--line-color);
+}
