@@ -12,12 +12,18 @@
     --btn-color: #66f384ec;
     --line-color: #02072b;
     --white: #F1F1F1;
+    --card-color: #313186;
 }
 
 body {
     font-size: 16px;
     font-family: var(--main-font);
 }
+
+/* .container {
+    background-color: var(--bg-comands);
+    height: 100vh;
+} */
 
 .hide {
     display: none;

@@ -1,6 +1,10 @@
 footer {
-    padding: 2em;
+    padding: 1.25em 2em;
     text-align: center;
     background-color: var(--bg-header);
     color: var(--white);
+}
+
+footer p {
+    font-size: .75rem;
 }

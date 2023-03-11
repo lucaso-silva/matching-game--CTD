@@ -1,8 +1,9 @@
 .comands {
+    background-color: var(--bg-comands);
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: .75em 0;
-    background-color: var(--bg-comands);
 }
 
 .start {
@@ -12,4 +13,5 @@
     border-radius: 10px;
     font-family: var(--logo-font);
     color: var(--line-color);
+    font-size: .9rem;
 }

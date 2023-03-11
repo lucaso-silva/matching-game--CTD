@@ -18,80 +18,83 @@
     <header>
         <h1 class="logo">Matching Game</h1>
         <fieldset>
-            <legend>Difficult</legend>
+            <legend>Difficult:</legend>
             <label for="easy"><input type="radio" id="easy" checked>Shih-Tzu</label>
             <label for="normal"><input type="radio" id="normal">Beagle</label>
             <label for="hard"><input type="radio" id="hard">Boxer</label>
         </fieldset>
     </header>
-    <section class="comands">
-        <button type="button" class="start">Start</button>
-        <p>Moves: <span class="moves"></span>13</p>
-        <p>Time: <span class="time">57s</span></p>
-    </section>
-    <main>
-        <section class="rules">
-            <h2 class="rules-title">Rules</h2>
-            <ul class="rules-content">
-                <li>All the cards are mixed up and laid in cols and rows, face down on the table.</li>
-                <li>Player choose, and turns over two cards:</li>
-                <li>If the cards do not match (it is not a pair), they turn them back over. </li>
-                <li>If the two cards match, it is a pair!</li>
-                <li>When the player found all the pairs, the game is over. </li>            
-            </ul>
-            <h3>Difficult</h3>
-            <ul class="rules-content">
-                <li><strong>Shih-Tzu:</strong> Easy mode, player has to find 6 pair.</li>
-                <li><strong>Beagle:</strong> Medium mode, player have to find 10 pair.</li>
-                <li><strong>Boxer:</strong> Hard mode, player have to find 16 pair.</li>
-            </ul>
+    <div class="container">
+        <section class="comands">
+            <button type="button" class="start">Start</button>
+            <p class="game-infos">Moves: <span class="moves"></span></p>
+            <p class="game-infos">Time: <span class="time"></span></p>
         </section>
-        <section class="game hide">
-            <h2 class="game-title">Find the matches</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="./assets/img/pug1.jpg" alt="Dog Image" class="card-img">
+        <main>
+            <section class="rules hide">
+                <h2 class="rules-title">Rules</h2>
+                <ul class="rules-content">
+                    <li>All the cards are mixed up and laid in cols and rows, face down on the table.</li>
+                    <li>The player chooses, and turns over two cards:</li>
+                    <li>&#x2716; If the cards do not match (it is not a pair), they are turned back over. </li>
+                    <li>&#x2714; If the two cards match, <strong>it is a pair!</strong></li>
+                    <li>When the player found all the pairs, the game is over. </li>            
+                </ul>
+                <h3 class="rules-difficult">Difficult</h3>
+                <ul class="rules-content">
+                    <li><strong>Shih-Tzu:</strong> Easy mode, the player has to find 6 pairs.</li>
+                    <li><strong>Beagle:</strong> Medium mode, the player has to find 10 pairs.</li>
+                    <li><strong>Boxer:</strong> Hard mode, the player has to find 16 pairs.</li>
+                </ul>
+            </section>
+            <section class="game">
+                <h2 class="game-title">Find the matches!</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/img/pug1.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug3.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug4.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug2.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug6.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug5.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug1.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug6.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug4.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug5.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug3.jpg" alt="Dog Image" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/pug2.jpg" alt="Dog Image" class="card-img">
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="./assets/img/pug3.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug4.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug2.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug6.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug5.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug1.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug6.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug4.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug5.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug3.jpg" alt="Dog Image" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/pug2.jpg" alt="Dog Image" class="card-img">
-                </div>
-            </div>
 
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>Developed by Lucas Oliveira</p>
     </footer>
+<script src="./assets/js/main.js" type="module"></script> 
 </body>
 
 </html>

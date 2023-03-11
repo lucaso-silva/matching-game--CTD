@@ -8,4 +8,16 @@
 
 .rules-title {
     font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.rules-content {
+    font-size: .75rem;
+    text-align: justify;
+}
+
+.rules-difficult {
+    margin: .75em 0;
+    font-size: .75rem;
+    font-weight: 600;
 }
