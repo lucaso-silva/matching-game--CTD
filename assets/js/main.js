@@ -1,9 +1,13 @@
 import createGameBoard from "./createGameBoard.js";
+//import findMatches from "./findMatches.js";
+
 
 //variables
 const difficultModes = document.querySelectorAll("[name=difficult]");
 const startBtn = document.querySelector(".start");
+
 let numCards = 6;
+
 //functions
 
 
@@ -26,7 +30,8 @@ difficultModes.forEach((mode) => {
   });
 });
 
-startBtn.addEventListener("click", () => {
+startBtn.addEventListener("click", () => {    
     createGameBoard(numCards);
 });
+
 

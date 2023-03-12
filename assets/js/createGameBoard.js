@@ -1,4 +1,5 @@
 import shuffleCards from "./shuffleCards.js";
+import discoverCard from "./discoverCard.js";
 
 const divCards = document.querySelector(".cards");
 
@@ -26,5 +27,14 @@ export default async function createGameBoard(numCards) {
 
         divCards.appendChild(divCard);
     }
+    
+    const allCards = document.querySelectorAll(".card");
+    
+    allCards.forEach((card) => {
+        card.addEventListener("click", ()=>{
+            discoverCard(card);
+        });
+    })
 };
+
 

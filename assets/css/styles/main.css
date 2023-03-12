@@ -40,12 +40,24 @@ main {
   content: "";
   position: absolute;
   inset: 0;
+  background-color: blue;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.show-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-color: transparent;
   background-size: cover;
   background-position: center;
   z-index: 1;
   border-radius: 10px;
 }
+
 
 @media screen and (min-width: 768px) {
   .cards {
