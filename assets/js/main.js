@@ -1,4 +1,4 @@
-import getImages from "./getImages.js";
+import createGameBoard from "./createGameBoard.js";
 
 //variables
 const difficultModes = document.querySelectorAll("[name=difficult]");
@@ -6,29 +6,27 @@ const startBtn = document.querySelector(".start");
 let numCards = 6;
 //functions
 
+
 //Events
 difficultModes.forEach((mode) => {
-    mode.addEventListener("click", ()=>{
-        const difficultLevel = mode.id;
+  mode.addEventListener("click", () => {
+    const difficultLevel = mode.id;
 
-        if(difficultLevel == "medium") {
-            numCards = 10;
-        }
+    if (difficultLevel == "easy") {
+      numCards = 6;
+    }
 
-        if (difficultLevel == "hard") {
-            numCards = 16;
+    if (difficultLevel == "medium") {
+      numCards = 10;
+    }
 
-        } 
-        
-        if (difficultLevel == "easy") {
-            numCards = 6;
-        }
-    })
-})
+    if (difficultLevel == "hard") {
+      numCards = 16;
+    }
+  });
+});
 
-startBtn.addEventListener("click", ()=>{
-    console.log(`btn Start clicado - jogo começará com ${numCards} cards`)
-})
+startBtn.addEventListener("click", () => {
+    createGameBoard(numCards);
+});
 
-
-//getImages(5);
