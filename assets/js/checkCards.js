@@ -3,7 +3,8 @@ export default function checkCards(firstItem, secondItem) {
     const cardTwo = secondItem.firstElementChild.getAttribute("src");
 
     if(cardOne === cardTwo) {
-        console.log("same Card!")
+        firstItem.classList.add("match");
+        secondItem.classList.add("match");
     
     } else {
         setTimeout(()=>{

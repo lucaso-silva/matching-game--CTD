@@ -5,6 +5,8 @@ import createGameBoard from "./createGameBoard.js";
 //variables
 const difficultModes = document.querySelectorAll("[name=difficult]");
 const startBtn = document.querySelector(".start");
+const displayRules = document.querySelector(".rules");
+const gameBoard = document.querySelector(".game");
 
 let numCards = 6;
 
@@ -30,8 +32,12 @@ difficultModes.forEach((mode) => {
   });
 });
 
-startBtn.addEventListener("click", () => {    
+startBtn.addEventListener("click", () => {  
+    displayRules.classList.add("hide");
+    gameBoard.classList.remove("hide");
+        
     createGameBoard(numCards);
+
 });
 
 
