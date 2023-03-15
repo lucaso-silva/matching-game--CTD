@@ -7,6 +7,7 @@ const difficultModes = document.querySelectorAll("[name=difficult]");
 const startBtn = document.querySelector(".start");
 const displayRules = document.querySelector(".rules");
 const gameBoard = document.querySelector(".game");
+const divCards = document.querySelector(".cards");
 
 let numCards = 6;
 
@@ -35,9 +36,11 @@ difficultModes.forEach((mode) => {
 startBtn.addEventListener("click", () => {  
     displayRules.classList.add("hide");
     gameBoard.classList.remove("hide");
-        
+    divCards.innerHTML = "";    
     createGameBoard(numCards);
 
 });
+
+export { numCards };
 
 

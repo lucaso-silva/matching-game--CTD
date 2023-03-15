@@ -1,0 +1,26 @@
+.finish {
+    background-color: var(--green);
+    width: 60vw;
+    padding: .75em;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.finish p {
+    font-family: var(--logo-font);
+    margin: .5em 0;
+}
+
+.restart {
+    background-color: var(--red);
+    margin-top: .5em;
+    padding: .5em 1.25em;
+    border: solid .15em var(--line-color);
+    border-radius: 10px;
+    font-family: var(--logo-font);
+    color: var(--line-color);
+    font-size: .9rem;
+}

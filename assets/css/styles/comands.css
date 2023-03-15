@@ -7,7 +7,7 @@
 }
 
 .start {
-    background-color: var(--btn-color);
+    background-color: var(--green);
     padding: .25em 1.25em;
     border: solid .15em var(--line-color);
     border-radius: 10px;
