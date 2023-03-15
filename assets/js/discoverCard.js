@@ -3,7 +3,7 @@ import checkCards from "./checkCards.js";
 let firstCard = "";
 let secondCard = "";
 
-export default function discoverCard(element) {
+export default function discoverCard(element, array) {
   if(element.className.includes("show-img")) {
     return;
   }
@@ -13,12 +13,14 @@ export default function discoverCard(element) {
     firstCard = element;
 
   } else if(secondCard == "") {
+    const cardsLeft = array.length;
+
     element.classList.add("show-img");
     secondCard = element;
 
-    checkCards(firstCard, secondCard);
+    checkCards(firstCard, secondCard, cardsLeft);
     firstCard = "";
     secondCard = "";
-  }
+  } 
 }
 

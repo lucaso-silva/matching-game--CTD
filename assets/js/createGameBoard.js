@@ -32,7 +32,7 @@ export default async function createGameBoard(numCards) {
 
   allCards.forEach((card) => {
     card.addEventListener("click", () => {
-      discoverCard(card);      
+      discoverCard(card, allCards);      
     });
   });
 }
