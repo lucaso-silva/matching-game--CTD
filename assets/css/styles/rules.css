@@ -40,4 +40,17 @@
     .rules {
         width: 40vw;
     }
+
+    .rules-title, .rules-difficult {
+        font-size: 1.25rem;
+    }
+
+    .rules-content {
+        font-size: 1.125rem;
+    }
+
+    .rules p {
+        font-size: 1.125rem;
+        margin-top: .75em;
+    }
 }
