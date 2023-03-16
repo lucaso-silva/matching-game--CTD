@@ -30,5 +30,6 @@
 
 .restart:hover {
     background-color: var(--green);
+    color: var(--line-color);
     cursor: pointer;
 }
