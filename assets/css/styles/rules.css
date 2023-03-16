@@ -21,3 +21,23 @@
     font-size: .75rem;
     font-weight: 600;
 }
+
+.rules p {
+    font-size: .75rem;
+    margin-top: .5em;
+    text-align: justify;
+    color: var(--line-color);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .rules {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .rules {
+        width: 40vw;
+    }
+}

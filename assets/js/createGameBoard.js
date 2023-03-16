@@ -2,6 +2,8 @@ import shuffleCards from "./shuffleCards.js";
 import discoverCard from "./discoverCard.js";
 
 const divCards = document.querySelector(".cards");
+const startBtn = document.querySelector(".start");
+const movesInfo = document.querySelector(".moves");
 
 export default async function createGameBoard(numCards) {
   const URL_API = `https://dog.ceo/api/breed/pug/images/random/${numCards}`;
@@ -12,6 +14,7 @@ export default async function createGameBoard(numCards) {
   const cardsDeck = [...listImgs, ...listImgs];
 
   const shuffledCards = shuffleCards(cardsDeck);
+  divCards.innerHTML = "";
 
   for (let i = 0; i < shuffledCards.length; i++) {
     let urlImgCard = shuffledCards[i];
@@ -27,6 +30,11 @@ export default async function createGameBoard(numCards) {
 
     divCards.appendChild(divCard);
   }
+
+  startBtn.innerHTML = "Restart"
+  startBtn.classList.add("restart");
+  startBtn.disabled = false;
+  movesInfo.innerHTML = "";
 
   const allCards = document.querySelectorAll(".card");
 

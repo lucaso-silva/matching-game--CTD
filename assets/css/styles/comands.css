@@ -14,4 +14,16 @@
     font-family: var(--logo-font);
     color: var(--line-color);
     font-size: .9rem;
+    transition: 1.5s;
+}
+
+.start:hover {
+    cursor: pointer;
+    color: var(--green);
+    border: solid .15em var(--card-color);
+    background-color: var(--line-color);
+}
+
+.restart {
+    background-color: var(--red);
 }

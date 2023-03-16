@@ -69,6 +69,12 @@ main {
     grid-template-rows: repeat(3, 1fr);
     width: 55vw;
   }
+
+  .medium-cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  
 }
 
 @media screen and (min-width: 1024px) {

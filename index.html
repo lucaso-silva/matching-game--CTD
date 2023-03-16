@@ -28,7 +28,7 @@
         <section class="comands">
             <button type="button" class="start">Start</button>
             <p class="game-infos">Moves: <span class="moves"></span></p>
-            <p class="game-infos">Time: <span class="time"></span></p>
+            <!-- <p class="game-infos">Time: <span class="time"></span></p> -->
         </section>
         <main>
             <section class="rules">
@@ -46,6 +46,7 @@
                     <li><strong>Beagle:</strong> Medium mode, the player has to find 10 pairs.</li>
                     <li><strong>Boxer:</strong> Hard mode, the player has to find 16 pairs.</li>
                 </ul>
+                <p>&#128204; For a better experience, using mobile screens it's recommended to play Shih-Tzu Mode. For screens between 768 and 1024px the Beagle mode runs well, as for the Boxer mode, screens above 1024px are recommended</p>
             </section>
             <section class="game hide">
                 <h2 class="game-title">Find the matches!</h2>
@@ -55,8 +56,8 @@
             </section>
             <section class="finish hide">
                 <p>Congrats!!</p>
-                <p>You matched all cards</p>
-                <button class="restart">Play again</button>
+                <p>You matched all cards in <span class="num-moves"></span> moves.</p>
+                <button class="play-again">Play again</button>
             </section>
         </main>
     </div>

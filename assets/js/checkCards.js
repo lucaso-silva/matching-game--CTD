@@ -1,4 +1,7 @@
-import gameFinished from "./gameFinished.js";
+import finishGame from "./finishGame.js";
+
+const movesInfo = document.querySelector(".moves");
+let moves = 0;
 
 export default function checkCards(firstItem, secondItem, numItens) {
     const cardOne = firstItem.firstElementChild.getAttribute("src");
@@ -7,11 +10,14 @@ export default function checkCards(firstItem, secondItem, numItens) {
     if(cardOne === cardTwo) {
         firstItem.classList.add("match");
         secondItem.classList.add("match");
+        moves++
+        movesInfo.innerHTML = moves;
 
         const cardsMatched = document.querySelectorAll(".match");
 
         if(cardsMatched.length == numItens) {
-            gameFinished();
+            finishGame(moves);
+            moves = 0;
         }
     
     } else {
@@ -20,5 +26,7 @@ export default function checkCards(firstItem, secondItem, numItens) {
         firstItem.classList.remove("show-img");
         secondItem.classList.remove("show-img");
         }, 700)
+        moves++
+        movesInfo.innerHTML = moves;
     }
 }

@@ -3,13 +3,18 @@ import { numCards } from "./main.js"
 
 const finishMessage = document.querySelector(".finish");
 const divCards = document.querySelector(".cards");
+const startBtn = document.querySelector(".start");
+const numMoves = document.querySelector(".num-moves");
 
-export default function gameFinished() {
+export default function finishGame(moves) {
     finishMessage.classList.remove("hide");
+    startBtn.disabled = true;
+    
+    numMoves.innerHTML = moves;
 
-    const btnRestart = document.querySelector(".restart");
+    const btnPlayAgain = document.querySelector(".play-again");
 
-    btnRestart.addEventListener("click", ()=>{
+    btnPlayAgain.addEventListener("click", ()=>{
         finishMessage.classList.add("hide");
         divCards.innerHTML = "";
         createGameBoard(numCards);
