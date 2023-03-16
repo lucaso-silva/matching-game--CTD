@@ -24,3 +24,10 @@
     color: var(--line-color);
     font-size: .9rem;
 }
+
+.play-again:hover {
+    background-color: var(--green);
+    border: solid .15em var(--line-color);
+    color: var(--card-color);
+    cursor: pointer;
+}

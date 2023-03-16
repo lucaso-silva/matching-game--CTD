@@ -8,7 +8,7 @@
 :root {
     --logo-font: 'Titan One', cursive;
     --main-font: 'Saira', sans-serif;
-    --bg-header: #596363;
+    --bg-color: #596363;
     --bg-comands: #25769c;
     --green: #66f384ec;
     --line-color: #02072b;
@@ -18,14 +18,10 @@
 }
 
 body {
+    background-color: var(--bg-color);
     font-size: 16px;
     font-family: var(--main-font);
 }
-
-/* .container {
-    background-color: var(--bg-comands);
-    height: 100vh;
-} */
 
 .hide {
     display: none;

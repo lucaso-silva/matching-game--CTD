@@ -23,11 +23,12 @@ main {
 }
 
 .card {
+  border: solid 0.125em var(--line-color);
+  border-radius: 10px;
+  cursor: pointer;
   width: 92.75px;
   height: 115px;
   position: relative;
-  border: solid 0.125em var(--line-color);
-  border-radius: 10px;
 }
 
 .card-img {
